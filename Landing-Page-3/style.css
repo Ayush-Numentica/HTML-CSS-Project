@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --background-light: #F5F4F9;
+  --background-dark: #000000;
+  --background-extra-light: #FFFFFF;
+  --background-blue: #2F7BFF;
+  --background-extreme-light: #F1EEFF;
+  --background-searchbar: #EBEAEF;
+  --background-icon: #ECEBF1;
+  --border-textbox: #D4D4D4;
+  --placeholder-color: #A7A7A7;
+  --drop-file-color: #8E8E8E;
+  --line-color: #BFBFBF;
+  --card-color: #D4D4D4;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+body {
+  background-color: var(--background-dark);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background-color: var(--background-light);
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.sidebar {
+  width: 284px;
+  background-color: #000000;
+  border-radius: 24px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company-description {
+  display: flex;
+  align-items: center;
+  width: 204px;
+  height: 52px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.company-description img {
+  width: 42px;
+  height: 42px;
+}
+
+.company-name {
+  color: var(--background-extra-light);
+  font-family: "Urbanist", sans-serif;
+  font-size: 32px;
+  letter-spacing: 6%;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.log-out-btn {
+  width: 253px;
+  height: 44px;
+  border-radius: 7px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.log-out-btn .log-out {
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-options {
+  display: flex;
+  flex-direction: column;
+  width: 253px;
+  height: 386px;
+  /* border: 1px solid white; */
+  padding-left: 5px;
+
+}
+
+.nav-options ul {
+  list-style: none;
+}
+
+.nav-options ul li {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  /* border: 1px solid white; */
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+.nav-options ul li a {
+  text-decoration: none;
+  color: var(--background-extra-light);
+  font-weight: 400px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  ;
+  padding: 10px;
+  /* border: 1px solid white; */
+}
+
+.items:hover {
+  /* width: 253px; */
+  height: 44px;
+  background-color: var(--background-extra-light);
+  border-radius: 7px;
+  cursor: pointer;
+  a {
+    color: #000000;
+  }
+}
+
+#active {
+  background-color: var(--background-extra-light);
+  height: 44px;
+  background-color: var(--background-extra-light);
+  border-radius: 7px;
+  cursor: pointer;
+
+  a {
+    color: #000000;
+  }
+}
+
+#finance{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#finance-text{
+  display: flex;
+  align-items: center;justify-content: center;
+}
+
+
+.main-content {
+  border: 1px solid black;
+  width: 100%;
+  background-color: aqua;
+}
