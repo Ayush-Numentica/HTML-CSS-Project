@@ -459,7 +459,7 @@ table.modern-table tbody tr:last-child td{
 .button-text{
      font-family: "Inter", sans-serif;
      font-size: 10px;
-     font-weight: 500px;
+     font-weight: 500;
      line-height: 120%;
      letter-spacing: 0%;
      color: var(--footer-button-color);
@@ -468,7 +468,7 @@ table.modern-table tbody tr:last-child td{
 .operation-button span{
     font-family: "Inter", sans-serif;
     font-size: 12.9px;
-    font-weight: 600px;
+    font-weight: 600;
     vertical-align: middle;
     line-height: 100%;
     color: var(--footer-back-color);
