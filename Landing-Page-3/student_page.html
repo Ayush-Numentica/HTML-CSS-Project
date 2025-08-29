@@ -2,71 +2,291 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student information</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding New Student</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="main-container">
-    <div class="sidebar">
-      <div class="navbar">
-        <div class="company-description">
-          <img src="../Landing-Page-3/images/logo.svg" alt="logo">
-          <p class="company-name">Smansys</p>
-        </div>
-        <div class="nav-options">
-          <ul class="different-options">
-            <li class="items">
-              <img src="../Landing-Page-3/images/home-2.svg" alt="">
-              <a href="#">DashBoard</a>
-            </li>
-            <li class="items">
-              <img src="../Landing-Page-3/images/teacher.svg" alt="">
-              <a href="#">Teachers</a>
-            </li>
-            <li class="items" id="active">
-              <img src="../Landing-Page-3/images/profile-2user.svg" alt="">
-              <a href="#">Students</a>
-            </li>
-            <li class="items" id="finance">
-                <div id="finance-text">
-                  <img src="../Landing-Page-3/images/dollar-square.svg" alt="">
-                  <a href="#">Finance</a>
+    <div id="wrapper">
+        <div class="container">
+            <div class="side-bar">
+                <div class="side-logo">
+                    <div class="logo">
+                        <img src="../images/logo.svg" alt="logo">
+                        <span>Smansys</span>
+                    </div>
+                    <div class="side-options">
+                        <ul>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/home-2.svg" alt="home">
+                                    <a href="">Dashboard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/teacher.svg" alt="teacher">
+                                    <a href="">Teachers</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/profile-2user.svg" alt="students">
+                                    <a href="">Students</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/dollar-square.svg" alt="fees">
+                                    <a href="">Fees</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/calendar.svg" alt="calendar">
+                                    <a href="">Calendar</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/calendar_1.svg" alt="Calendar">
+                                    <a href="">Time Table</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/🦆 icon _message square dots_.svg" alt="message">
+                                    <a href="">Message</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/setting-2.svg" alt="setting">
+                                    <a href="">Setting</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                  <img src="../Landing-Page-3/images/chevron-right.svg" alt="">
+                <div class="log-out-btn">
+                    <button>
+                        <div class="log-out">
+                            <span>Log Out</span>
+                            <img src="../images/arrow-right-circle.svg" alt="log">
+                        </div>
+                    </button>
                 </div>
-            </li>
-            <li class="items">
-              <img src="../Landing-Page-3/images/calendar.svg" alt="">
-              <a href="#">Calender</a>
-            </li>
-            <li class="items">
-              <img src="../Landing-Page-3/images/calendar_1.svg" alt="">
-              <a href="#">Time Table</a>
-            </li>
-            <li class="items">
-              <img src="../Landing-Page-3/images/🦆 icon _message square dots_.svg" alt="">
-              <a href="#">Message</a>
-            </li>
-            <li class="items">
-              <img src="../Landing-Page-3/images/setting-2.svg" alt="">
-              <a href="#">Setting</a>
-            </li>
-          </ul>
+            </div>
+            <div class="main-content">
+                <div class="top-bar">
+                    <div class="top-bar">
+                        <div class="top-bar-left">
+                            <button class="collapse-button"><img src="../images/arrow-right.svg"
+                                    alt="collapse"></button>
+                            <div class="search-bar">
+                                <img class="search-img" src="../images/search-icon.svg" alt="search icon">
+                                <input class="search-text" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="top-bar-right">
+                            <a href="" class="right-button"><img src="../images/notification.svg"
+                                    alt="notification"></a>
+                            <a href="" class="right-button"><img src="../images/🦆 icon _message square dots_2.svg"
+                                    alt="notification"></a>
+                            <a href="" class="right-button"><img src="../images/setting-22.svg" alt="notification"></a>
+                            <a href=""><img src="../images/Profile.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-edit">
+                    <span>Add New Student</span>
+                </div>
+                <div class="edit-buttons">
+                    <button>cancel</button>
+                    <button>reset</button>
+                    <button id="save-button">save</button>
+                </div>
+                <div class="form-container">
+                    <div class="left-form-container">
+                        <div class="card" id="basic-info">
+                            <div class="card-top-bar">Basic Information</div>
+                            <div class="card-form">
+                                <div class="left-side-form">
+                                    <div class="name">
+                                        <span>First Name</span>
+                                        <input type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="name">
+                                        <span>Gender</span>
+                                        <div class="gender">
+                                            <label>
+                                                <input type="radio" name="gender" value="male">
+                                                Male
+                                            </label>
+
+                                            <label>
+                                                <input type="radio" name="gender" value="female">
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="name">
+                                        <span>Date Of Birth</span>
+                                        <input type="date" placeholder="dd/mm/yyyy">
+                                    </div>
+                                    <div class="scroll-button">
+                                        <button>class <img src="../images/chevron-down.svg" alt=""></button>
+                                        <button>Section <img src="../images/chevron-down.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="right-side-form">
+                                    <div class="name">
+                                        <span>Last Name</span>
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="upload">
+                                        <img src="../images/Group 2.svg" alt="">
+                                        <span>Drop your files to upload</span>
+                                        <button class="select">Select file</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="parent-info">
+                            <div class="card-top-bar">Parent Details</div>
+                            <div class="card-form">
+                                <div class="left-side-form">
+                                    <div class="name">
+                                        <span>Father Name</span>
+                                        <input type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="name">
+                                        <span>Father Contact</span>
+                                        <input type="number" placeholder="Contact">
+                                    </div>
+                                    <div class="name">
+                                        <span>Father Occupation</span>
+                                        <input type="text" placeholder="Ex: Business">
+                                    </div>
+                                </div>
+                                <div class="right-side-form">
+                                    <div class="name">
+                                        <span>Mother Name</span>
+                                        <input type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="name">
+                                        <span>Mother Contact</span>
+                                        <input type="number" placeholder="Contact">
+                                    </div>
+                                    <div class="name">
+                                        <span>Annual Income</span>
+                                        <input type="text" placeholder="1,00,000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-form-container">
+                        <div class="card" id="login-info">
+                            <div class="card-top-bar">Login/Account Details</div>
+                            <div class="card-form">
+                                <div class="left-side-form">
+                                    <div class="name">
+
+                                        <input type="text" placeholder="User Name">
+                                    </div>
+                                </div>
+                                <div class="right-side-form">
+                                    <div class="name">
+
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="contact-info">
+                            <div class="card-top-bar">Contact Information</div>
+                            <div class="card-form">
+                                <div class="left-side-form">
+                                    <div class="name">
+                                        <span>Phone</span>
+                                        <input type="number" placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="right-side-form">
+                                    <div class="name">
+                                        <span>Email</span>
+                                        <input type="text" placeholder="example@gmail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="name">
+                                    <span>Address</span>
+                                    <input type="text" placeholder="example@gmail.com">
+                                </div>
+                            </div>
+                            <div class="card-form">
+                                <div class="left-side-form">
+                                    <div class="name">
+                                        <input type="text" placeholder="Location">
+                                    </div>
+                                    <div class="name">
+                                        <input type="number" placeholder="Pincode">
+                                    </div>
+                                </div>
+                                <div class="right-side-form">
+                                    <div class="name">
+                                        <input type="text" placeholder="District">
+                                    </div>
+                                    <div class="name">
+                                        <input type="text" placeholder="State">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="additional-info">
+                            <div class="card-top-bar">Additional Information</div>
+                            <div class="checkboxes">
+                                <div class="check-box-a">
+                                    <div class="check-box-1">
+                                        <label>
+                                            <input type="radio" name="additional-info" value="Day Scholar">
+                                            Day Scholar
+                                        </label>
+                                    </div>
+                                    <div class="check-box-1">
+                                        <label>
+                                            <input type="radio" name="additional-info" value="Day Scholar">
+                                            Hosteller
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="check-box-b">
+                                    <div class="check-box-1">
+                                        <label>
+                                            <input type="radio" name="additional-info" value="Day Scholar">
+                                            Transport
+                                        </label>
+                                    </div>
+                                    <div class="check-box-1">
+                                        <label>
+                                            <input type="radio" name="additional-info" value="Day Scholar">
+                                            Non Transport
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div>
-        <button class="log-out-btn">
-          <p class="log-out">Log Out</p>
-          <img src="../Landing-Page-3/images/arrow-right-circle.svg" alt="arrow img">
-        </button>
-      </div>
-    </div>
-    <div class="main-content"></div>
-  </div>
 </body>
 
 </html>
