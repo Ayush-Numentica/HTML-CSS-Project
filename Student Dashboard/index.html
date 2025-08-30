@@ -4,135 +4,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fees Management</title>
+    <title>Adding New Student</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <div class="main-container">
-            <div class="container">
-                <div class="side-bar">
-                    <div class="side-logo">
-                        <div class="logo">
-                            <img src="../images/logo.svg" alt="logo">
-                            <span>Smansys</span>
-                        </div>
-                        <div class="side-options">
-                            <ul>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/home-2.svg" alt="home">
-                                        <a href="">Dashboard</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/teacher.svg" alt="teacher">
-                                        <a href="">Teachers</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/profile-2user.svg" alt="students">
-                                        <a href="">Students</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/dollar-square.svg" alt="fees">
-                                        <a href="">Fees</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/calendar.svg" alt="calendar">
-                                        <a href="">Calendar</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/calendar_1.svg" alt="Calendar">
-                                        <a href="">Time Table</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/🦆 icon _message square dots_.svg" alt="message">
-                                        <a href="">Message</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="button-orientation">
-                                        <img src="../images/setting-2.svg" alt="setting">
-                                        <a href="">Setting</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+    <div id="wrapper">
+        <div class="container">
+            <div class="side-bar">
+                <div class="side-logo">
+                    <div class="logo">
+                        <img src="../images/logo.svg" alt="logo">
+                        <span>Smansys</span>
                     </div>
-                    <div class="log-out-btn">
-                        <button>
-                            <div class="log-out">
-                                <span>Log Out</span>
-                                <img src="../Landing-page-5/images/arrow-right-circle.svg" alt="log">
-                            </div>
-                        </button>
+                    <div class="side-options">
+                        <ul>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/home-2.svg" alt="home">
+                                    <a href="">Dashboard</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/teacher.svg" alt="teacher">
+                                    <a href="">Teachers</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/profile-2user.svg" alt="students">
+                                    <a href="">Students</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/dollar-square.svg" alt="fees">
+                                    <a href="">Fees</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/calendar.svg" alt="calendar">
+                                    <a href="">Calendar</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/calendar_1.svg" alt="Calendar">
+                                    <a href="">Time Table</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/🦆 icon _message square dots_.svg" alt="message">
+                                    <a href="">Message</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button-orientation">
+                                    <img src="../images/setting-2.svg" alt="setting">
+                                    <a href="">Setting</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="main-content">
+                <div class="log-out-btn">
+                    <button>
+                        <div class="log-out">
+                            <span>Log Out</span>
+                            <img src="../images/arrow-right-circle.svg" alt="log">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="top-bar">
                     <div class="top-bar">
-                        <div class="top-bar">
-                            <div class="left">
-                                <button class="collapse-button"><img src="../images/arrow-right.svg"
-                                        alt="collapse"></button>
-                                <div class="search-bar">
-                                    <img class="search-img" src="../images/search-icon.svg" alt="search icon">
-                                    <input class="search-text" type="text" placeholder="Search">
-                                </div>
+                        <div class="top-bar-left">
+                            <button class="collapse-button"><img src="../images/arrow-right.svg"
+                                    alt="collapse"></button>
+                            <div class="search-bar">
+                                <img class="search-img" src="../images/search-icon.svg" alt="search icon">
+                                <input class="search-text" type="text" placeholder="Search">
                             </div>
-                            <div class="right">
-                                <a href="" class="right-button"><img src="../images/notification.svg"
-                                        alt="notification"></a>
-                                <a href="" class="right-button"><img src="../images/🦆 icon _message square dots_2.svg"
-                                        alt="notification"></a>
-                                <a href="" class="right-button"><img src="../images/🦆 icon _message square dots_2.svg"
-                                        alt="notification"></a>
-                                <a href=""><img src="../images/Profile.svg" alt=""></a>
-                            </div>
+                        </div>
+                        <div class="top-bar-right">
+                            <a href="" class="right-button"><img src="../images/notification.svg"
+                                    alt="notification"></a>
+                            <a href="" class="right-button"><img src="../images/🦆 icon _message square dots_2.svg"
+                                    alt="notification"></a>
+                            <a href="" class="right-button"><img src="../images/setting-22.svg" alt="notification"></a>
+                            <a href=""><img src="../images/Profile.svg" alt=""></a>
                         </div>
                     </div>
-                    <div class="charts-table">
-                        <div class="grid-1">
-                            <div class="container2">ayush</div>
-                            <div class="container3">ayush</div>
-                            <div class="container4">ayush</div>
-                            <div class="container5">ayush</div>
-                            <div class="container6">ayush</div>
-                            <div class="container7">ayush</div>
-                            <div class="container8">ayush</div>
-                            <div class="container9">ayush</div>
-                            <div class="container10">ayush</div>
+                </div>
+                <div class="card-area">
+                    <div class="above-card">
+                        <div class="above-left">ayush</div>
+                        <div class="above-right">ayush</div>
+                    </div>
+                    <div class="lower-card">
+                        <div class="card" id="lower-left">
+                            <div class="head-bar">
+                                <div class="card-name">Assignment</div>
+                                <div class="head-bar-right">
+                                    <img src="../images/Filter icon.svg" alt="">
+                                    <div id="subject-search-bar">
+                                        <img class="search-img" src="../images/search-icon.svg" alt="search icon">
+                                        <input class="search-text-subject" type="text" placeholder="Search by Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <table class="student-information">
+                                    <thead>
+
+                                        <th class="first-col">No</th>
+                                        <th class="second-col">Task</th>
+                                        <th class="remain-col">Subject</th>
+                                        <th class="remain-col">Due Date</th>
+                                        <th class="remain-col">check</th>
+                                        <th class="remain-col">Action</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="in-progress">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="not-started">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="in-progress">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="in-progress">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="completed">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="in-progress">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="completed">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="not-started">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-col">01</td>
+                                            <td class="second-col">Read Chapters1-3</td>
+                                            <td class="remain-col">English</td>
+                                            <td class="remain-col">12 May 2024</td>
+                                            <td class="remain-col">
+                                                <div class="in-progress">In progress</div>
+                                            </td>
+                                            <td class="remain-col">
+                                                <div class="action-button">
+                                                    <img src="../images/edit.svg" alt="">
+                                                    <img src="../images/delete_icon_184061 1.svg" alt="">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="operation-button">
+                                <button class="button-text">Previous</button>
+                                <span>Page 1 of 12</span>
+                                <button class="button-text">Next</button>
+                            </div>
                         </div>
-                        <div class="container-1">ranjan</div>
+                        <div class="card" id="lower-right">
+                            <div class="head-bar">
+                                <div class="card-name">Messages</div>
+                                <div class="head-bar-right">
+                                    <img src="../images/arrow-right-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="profile-card">
+                                <div class="people-profile">
+                                    <img src="../images/Frame 5023 (5).svg" alt="">
+                                    <div class="people-desc">
+                                        Jane Cooper<br>
+                                        <span>Don’t forget the lab rep...</span>
+                                    </div>
+                                </div>
+
+                                <div class="people-profile">
+                                    <img src="../images/Frame 5023 (6).svg" alt="">
+                                    <div class="people-desc">
+                                        Jane Cooper<br>
+                                        <span>Don’t forget the lab rep...</span>
+                                    </div>
+                                </div>
+                                <div class="people-profile">
+                                    <img src="../images/Frame 5023 (7).svg" alt="">
+                                    <div class="people-desc">
+                                        Jane Cooper<br>
+                                        <span>Don’t forget the lab rep...</span>
+                                    </div>
+                                </div>
+                                <div class="people-profile">
+                                    <img src="../images/Frame 5023 (8).svg" alt="">
+                                    <div class="people-desc">
+                                        Jane Cooper<br>
+                                        <span>Don’t forget the lab rep...</span>
+                                    </div>
+                                </div>
+                                <div class="people-profile">
+                                    <img src="../images/Frame 5023 (9).svg" alt="">
+                                    <div class="people-desc">
+                                        Jane Cooper<br>
+                                        <span>Don’t forget the lab rep...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </body>
-
-    </html>
 </body>
 
 </html>

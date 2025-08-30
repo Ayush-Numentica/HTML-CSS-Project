@@ -12,7 +12,7 @@
     overflow-x: hidden;
     background-color: #000;
     padding: 20px 20px 20px 20px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     width: 1600px;
     /* position: relative; */
 }
