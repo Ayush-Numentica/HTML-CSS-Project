@@ -8,6 +8,7 @@
 }
 body{
     background-color: #000000;
+
 }
 
 #wrapper {
@@ -17,8 +18,8 @@ body{
     overflow-x: hidden;
     background-color: #000;
     padding: 20px 20px 20px 20px;
-     margin: 0 auto;
-     border-radius: 30px;
+    margin: 0 auto;
+    border-radius: 30px;
     /* border-radius: 30px; */
     width: 1600px;
     /* position: relative; */
@@ -34,10 +35,11 @@ body{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    /* width: 1600px; */
 }
 
 .side-bar {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 20%;
     border-radius: 24px;
     padding: 15px;
@@ -340,6 +342,9 @@ body{
     max-width: 100%;
 }
 
+
+/* Assignment Table */
+
 #lower-left {
     width: 80%;
     
@@ -479,6 +484,8 @@ td {
     color: #CBCCCD;
 }
 
+/* Message Box */
+
 #lower-right {
     width: 20%;
     display: flex;
@@ -531,19 +538,21 @@ td {
     gap: 10px; */
     /* background-color: #e0a7a7; */
     /* border: 1px solid black; */
-    display: grid;
     /* gap: 10px; */
-    grid-template-columns: 1fr 0.4fr 0.6fr 0.8fr 0.2fr 0.7fr;
     /* grid-template-columns: repeat(6,auto); */
     /* grid-template-rows: 1fr 0.4fr 0.6fr 1fr; */
-    grid-template-rows: auto auto auto auto;
     /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.6fr 0.8fr 0.2fr 0.7fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "a1 a1 a1 a2 a3 a3"
         "a4 a5 a5 a2 a3 a3"
         "a4 a5 a5 a6 a6 a7"
         "a8 a8 a9 a9 a9 a7";
 }
+
+/* Greeting card */
 
 .container-1 {
     grid-area: a1;
@@ -571,8 +580,8 @@ td {
 .profile-desc{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 2rem 0 0 2rem;
+    gap: 2rem;
+    padding: 4rem 0 0 2rem;
     width: 100%;
 }
 .profile-desc p{
@@ -591,6 +600,9 @@ td {
     letter-spacing: 0%;
     color: #797979;
 }
+
+
+/* Attendance */
 
 .container-2 {
     grid-area: a2;
@@ -673,6 +685,10 @@ td {
     color: #000000;
     
 }
+
+/* Date */
+
+
 .container-3 {
     grid-area: a3;
     /* border: 1px solid black; */
@@ -742,6 +758,8 @@ td {
     transition: transform 0.2s ease-in-out;
 }
 
+/* Small cards */
+
 .container-4 {
     grid-area: a4;
     /* border: 1px solid black; */
@@ -794,6 +812,9 @@ td {
     vertical-align: middle;
     color: #B8B8B8;
 }
+
+/* Notice Board */
+
 .container-5 {
     grid-area: a5;
     /* border: 1px solid black; */
@@ -868,6 +889,8 @@ td {
     height: 100%;
 }
 
+/* Resources */
+
 .container-6 {
     grid-area: a6;
     /* border: 1px solid black; */
@@ -932,6 +955,9 @@ a{
     font-family: "Inter", sans-serif;
     vertical-align: middle;
 }
+
+
+/* Time Table */
 
 .container-7 {
     grid-area: a7;
@@ -1002,6 +1028,9 @@ a{
     color: #B97624;
 }
 
+
+/* Test Score Activity */
+
 .container-8 {
     grid-area: a8;
     /* border: 1px solid black; */
@@ -1016,6 +1045,9 @@ a{
     height: 100%;
     /* border: 1px solid black; */
 }
+
+/* Grade By Subject */
+
 .container-9 {
     grid-area: a9;
     /* border: 1px solid black; */
@@ -1104,6 +1136,43 @@ a{
     align-items: center;
     /* display: none; */
 }
+@media(max-width:600px){
+    .side-bar{
+        display: none;
+    }
+    .above-card{
+        display: grid;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "a1 a1"
+        "a2 a6"
+        "a4 a5"
+        "a3 a7"
+        "a8 a9";
+        /* width: 100%; */
+        grid-template-columns: 1fr 1fr;
+        /* height: fit-content; */
+        /* width: fit-content; */
+        
+    }
+    .lower-card{
+        /* display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #lower-left{
+        width: 100%;
+    }
+    #lower-right{
+
+    }
+}
+
 /* .above-left
 {
     border: 1px solid black;
