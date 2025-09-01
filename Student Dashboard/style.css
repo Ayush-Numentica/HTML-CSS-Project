@@ -4,6 +4,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* background-color: #000000; */
+}
+body{
+    background-color: #000000;
 }
 
 #wrapper {
@@ -13,6 +17,8 @@
     overflow-x: hidden;
     background-color: #000;
     padding: 20px 20px 20px 20px;
+     margin: 0 auto;
+     border-radius: 30px;
     /* border-radius: 30px; */
     width: 1600px;
     /* position: relative; */
@@ -254,7 +260,10 @@
     gap: 20px;
     height: 100%;
     width: 100%;
-    border: 1px solid black;
+    position: relative;
+
+    /* border: 1px solid black; */
+    /* position: relative; */
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -521,7 +530,7 @@ td {
     width: 100%;
     gap: 10px; */
     /* background-color: #e0a7a7; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     /* gap: 10px; */
     grid-template-columns: 1fr 0.4fr 0.6fr 0.8fr 0.2fr 0.7fr;
@@ -538,22 +547,204 @@ td {
 
 .container-1 {
     grid-area: a1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 10px;
+    position: relative;
+}
+
+
+.human-img{
+    height: fit-content;
+    width: fit-content;
+    
+}
+.hman-img img{
+    left: 376px;
+}
+#profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+.profile-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem 0 0 2rem;
+    width: 100%;
+}
+.profile-desc p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.profile-desc span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #797979;
 }
 
 .container-2 {
     grid-area: a2;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.chart-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
 }
 
+.chart ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    list-style: disc;
+}
+.chart li{
+    font-size: 12px;
+    font-family:"Inter", sans-serif;
+    font-weight: 300;
+    line-height: 120%;
+    vertical-align: middle;
+    letter-spacing: 0%;
+    color: #777777;
+}
+.chart li::marker{
+    font-size: 1.5em;
+    color:#CFCEFF;
+}
+#present::marker{
+    color:#CFCEFF;
+}
+#absent::marker{
+    color:#FAE27C;
+}
+.pie-chart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pie-chart-one{
+
+    /* border: 1px solid black; */
+    height: 100%;
+    border-radius: 50% ;
+    padding: 1.5rem;
+    height: 151.58px;
+    width: 151.58px;
+    background-color: #CFCEFF;
+}
+.pie-chart-two{
+
+    /* border: 1px solid black; */
+    height: 100%;
+    border-radius: 50% ;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.pie-chart-two span{
+    font-family:"Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #000000;
+    
+}
 .container-3 {
     grid-area: a3;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+#calendar{
+    gap: 2rem;
+    cursor: pointer;
+}
+#date .card-name{
+    font-family:"Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    color: #4A5660;
+    
+}
+#date img{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.days p{
+    /* border: 1px solid black; */
+    font-family:"Inter", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    letter-spacing: 1.5px;
+    color: #B5BEC6;
+}
+.date-count
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,auto);
+    height: 100%;
+    /* gap: 10px; */
+}
+.date-count p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+.date-count p{
+    font-family:"Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #4A5660;
+}
+.date-count p:hover{
+    background-color: #F04D23;
+    border-radius: 50%;
+    color: #FFFFFF ;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
 
 .container-4 {
     grid-area: a4;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -605,7 +796,7 @@ td {
 }
 .container-5 {
     grid-area: a5;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
 }
 .notice-board{
@@ -679,7 +870,7 @@ td {
 
 .container-6 {
     grid-area: a6;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
 }
 
@@ -744,18 +935,19 @@ a{
 
 .container-7 {
     grid-area: a7;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
 }
 
 #days {
     /* border: 1px solid black; */
     padding-top: 0.5rem;
+    cursor: pointer;
 }
 
 .day-button {
     background-color: #FFFFFF;
-    box-shadow: 0 1px 5.2px -1px rgb(0, 0, 0, 0.25);
+    /* box-shadow: 0 1px 5.2px -1px rgb(0, 0, 0, 0.25); */
     padding: 2px;
     border-radius: 6px;
     border: none;
@@ -763,6 +955,7 @@ a{
     text-align: center;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #days .head-bar {
@@ -811,7 +1004,7 @@ a{
 
 .container-8 {
     grid-area: a8;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
 }
 .graph{
@@ -821,11 +1014,11 @@ a{
 .graph img{
      width: 100%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .container-9 {
     grid-area: a9;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
 }
 
