@@ -246,6 +246,37 @@
    height: 24px;
 }
 .container-box-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.add-new{
+    display: flex;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.add-new a{
+    background-color: #fff;
+    border: none;
+    border-radius: 9px;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-new p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    line-height: 120%;
+    letter-spacing: 1%;
+    vertical-align: middle;
+}
+.container-box-3 span{
     /* border: 1px solid black; */
     width: 100%;
     font-size: 32px;
