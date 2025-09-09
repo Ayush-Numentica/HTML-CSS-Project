@@ -32,22 +32,25 @@ submitButton.addEventListener('click', (e) => {
         .then((userData) => {
             console.log(userData);
 
-            for (let i = 0; i < userData.length; i++) {
-                if (userData[i].email === inputEmail && userData[i].password === inputPassword) {
+            const matchedUser = userData.filter(user =>
+                user.email === inputEmail && user.password === inputPassword
+            )
 
-                    loginStatus.innerHTML = "Login Succesful";
-                    loginStatus.style.color = "#9dcd63ff";
-                    window.location.href="../Student Dashboard/index.html";
-                    // console.log("window.location.href");
-                    break;
-                }
-                else {
-                    loginStatus.innerHTML = "Invalid email or password";
-                    loginStatus.style.color="#ea3232ff";
-                }
+            // for (let i = 0; i < userData.length; i++) {
+            if (matchedUser.length > 0) {
+                loginStatus.innerHTML = "Login Succesful";
+                loginStatus.style.color = "#9dcd63ff";
+                window.location.href = "../Student Dashboard/index.html";
+                sessionStorage.setItem("currentUser", JSON.stringify(matchedUser[0]));
+                // break;
             }
+            else {
+                loginStatus.innerHTML = "Invalid email or password";
+                loginStatus.style.color = "#ea3232ff";
+            }
+            // }
         })
         .catch((error) => {
-            console.log(error)
+            console.log(error);
         })
 })

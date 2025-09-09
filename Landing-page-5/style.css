@@ -377,6 +377,12 @@
     height: 100%;
     background-color: var(--background-extra-light);
 }
+.edit-button{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
 
 .data-and-operations{
     display: flex;
